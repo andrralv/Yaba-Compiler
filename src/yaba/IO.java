@@ -58,6 +58,20 @@ class IO {
         out.close();
         }
     
+    public void setStartOfFile (BufferedReader reader, int lineNumber) throws IOException {
+        File file = new File(".\\input_temp.txt");
+        file.createNewFile();
+        FileWriter writer = new FileWriter(file); 
+        BufferedWriter out = new BufferedWriter(writer);
+        out.append("@");
+        
+        for (int i=0;i<lineNumber;i++){
+            out.write(reader.readLine());
+            out.newLine();
+            }
+        out.close();
+        }
+    
     // Lo ideal es que al final del programa se muestre este archivo en 
     // la terminal, el .txt puede funcionar como un log para referencias
 }

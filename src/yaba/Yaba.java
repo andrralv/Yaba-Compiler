@@ -16,6 +16,7 @@ public class Yaba {
      * @throws java.io.UnsupportedEncodingException
      * @throws java.io.FileNotFoundException
      */
+    
     public static void main(String[] args) throws UnsupportedEncodingException, FileNotFoundException, IOException {
         System.out.println("Bienvenido al Compilador de YABA");
         System.out.println("Ingrese el nombre de un archivo YABA.");
@@ -29,16 +30,18 @@ public class Yaba {
         Numbers numbers = new Numbers();
         // lcontent es un buffer individual para obtener el numero de lineas
         BufferedReader lcontent = reader.readFile(".\\" + archivo);
+        BufferedReader llcontent = reader.readFile(".\\" + archivo);
         BufferedReader content = reader.readFile(".\\" + archivo);
-        
+        reader.setStartOfFile(content, numbers.getLineNumber(lcontent));
+        BufferedReader fcontent = reader.readFile(".\\input_temp.txt");
         Tokenizer tokenizer = new Tokenizer();
-        int line_number = numbers.getLineNumber(lcontent);
-
+        int line_number = numbers.getLineNumber(llcontent);
+        System.out.println(llcontent);
         for (int i = 0; i < line_number; i++) {
-            tokenizer.tokenize(content.readLine());
+            tokenizer.tokenize(fcontent.readLine());
         }
         
-        reader.writeFileWithNumbers(content, line_number);
+        reader.writeFileWithNumbers(fcontent, line_number);
     }
 }
 

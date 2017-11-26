@@ -31,5 +31,4 @@ public class Tokenizer {
         }
        return token_raw;
     }
-    
 }
