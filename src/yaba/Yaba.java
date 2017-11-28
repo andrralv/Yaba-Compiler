@@ -36,7 +36,6 @@ public class Yaba {
         BufferedReader fcontent = reader.readFile(".\\input_temp.txt");
         Tokenizer tokenizer = new Tokenizer();
         int line_number = numbers.getLineNumber(llcontent);
-        System.out.println(llcontent);
         for (int i = 0; i < line_number; i++) {
             tokenizer.tokenize(fcontent.readLine());
         }

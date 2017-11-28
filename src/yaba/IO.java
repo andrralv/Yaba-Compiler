@@ -63,7 +63,7 @@ class IO {
         file.createNewFile();
         FileWriter writer = new FileWriter(file); 
         BufferedWriter out = new BufferedWriter(writer);
-        out.append("@");
+        out.append("");
         
         for (int i=0;i<lineNumber;i++){
             out.write(reader.readLine());

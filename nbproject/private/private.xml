@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/andrralv/Documents/NetBeansProjects/yaba/src/yaba/Token.java</file>
-            <file>file:/C:/Users/andrralv/Documents/NetBeansProjects/yaba/src/yaba/AnalizadorLexico.java</file>
-            <file>file:/C:/Users/andrralv/Documents/NetBeansProjects/yaba/src/yaba/Numbers.java</file>
-            <file>file:/C:/Users/andrralv/Documents/NetBeansProjects/yaba/src/yaba/SintaxisValida.java</file>
+            <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/SintaxisValida.java</file>
+            <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/Token.java</file>
+            <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/Parser.java</file>
         </group>
     </open-files>
 </project-private>

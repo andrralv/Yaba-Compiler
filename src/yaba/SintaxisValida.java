@@ -30,7 +30,7 @@ public class SintaxisValida {
         control = new String[3];
         loop = new String[2];
         exceptions = new String[4];
-        keywords = new String[11];
+        keywords = new String[16];
         legacy = new String[2];
         dataTypes = new String[6];
         digits = new String[5];
@@ -40,7 +40,7 @@ public class SintaxisValida {
         delimitators_closed = new String[4];
         delimitators_open = new String[4];
         comments = new String[3];
-        end_line = new String[1];
+        end_line = new String[2];
         
         delimitators_open();
         delimitators_closed();
@@ -112,6 +112,11 @@ public class SintaxisValida {
         keywords[8] = "package";
         keywords[9] = "import";
         keywords[10] = "static";
+        keywords[11] = "println";
+        keywords[12] = "System.out.println";
+        keywords[13] = "abstract";
+        keywords[14] = "class";
+        keywords[15] = "";
     }    
     
     void legacy() {
@@ -162,4 +167,5 @@ public class SintaxisValida {
     void end_line() {
         end_line[0] = ";";
     }
+    
 }

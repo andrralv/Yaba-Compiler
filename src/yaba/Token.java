@@ -82,7 +82,7 @@ class Tokens {
         
         try {
             if (this.isAlphaNumeric(e.getValue()) || this.checkBracket(e.getValue()) || this.checkOperator(e.getValue()) || this.checkDigit(e.getValue())) {
-                this.tokens.add(e);
+                
                 System.out.println("Pass: " + e.getType() + " " + e.getValue());
             }
         }
@@ -99,7 +99,6 @@ class Tokens {
     
     public boolean checkDigit(String s){
         String pattern= "[0-9]+";
-        System.out.println(s);
         return s.matches(pattern);
         }
     
@@ -114,6 +113,7 @@ class Tokens {
             return true;
         } else {return false;}
     }
+    
     
     public void printTokens() {
        for (Token t : this.tokens) {

@@ -13,7 +13,6 @@ public class Lexer {
     public Token getToken(String token_raw) {
         Token token = new Token("variable",  token_raw);
         
-        
         String pattern= "[0-9]+";
         if (token_raw.matches(pattern)) {
             token = new Token("digit", token_raw);

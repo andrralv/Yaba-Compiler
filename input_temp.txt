@@ -1,5 +1,6 @@
-@﻿public static String Hello(String x) {
+public static String Hello(String x) {
 	if (x + 1 == 3) {
+		System.out.println("Worked");
 		return True;
 	}
 }
