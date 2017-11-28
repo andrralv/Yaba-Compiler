@@ -72,6 +72,4 @@ class IO {
         out.close();
         }
     
-    // Lo ideal es que al final del programa se muestre este archivo en 
-    // la terminal, el .txt puede funcionar como un log para referencias
 }

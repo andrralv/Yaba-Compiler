@@ -36,9 +36,22 @@ public class Yaba {
         BufferedReader fcontent = reader.readFile(".\\input_temp.txt");
         Tokenizer tokenizer = new Tokenizer();
         int line_number = numbers.getLineNumber(llcontent);
+        Parser parser = new Parser();
         for (int i = 0; i < line_number; i++) {
             tokenizer.tokenize(fcontent.readLine());
         }
+        Tokens tokenList = tokenizer.getTokenList();
+        // PRUEBA DE LEXER -- IMPRESION Y VALORACION DE LEXICO
+        System.out.println("");
+        System.out.println("PRUEBA 1 --- TEST DE LEXICO");
+        tokenList.printTokens();
+        System.out.println("********* FIN DE PRUEBA 1 **********");
+        System.out.println("");
+        // PRUEBA DE SINTAXIS -- COMPROBACION DE GRUPOS Y ARITMETICA
+        System.out.println("PRUEBA 2 --- TEST DE SINTAXIS");
+        parser.parse(tokenList);
+        System.out.println("********* FIN DE PRUEBA 2 **********");
+        System.out.println("");
         
         reader.writeFileWithNumbers(fcontent, line_number);
     }

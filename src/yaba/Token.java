@@ -18,14 +18,7 @@ public class Token {
     super();
     this.sequence = sequence;
   }
-  
-  public Token(int currentLine, String type, String value, int token, String sequence) {
-        this.cursor = currentLine;
-        this.type = type;
-        this.value = value;
-        this.sequence = sequence;
-    }
-  
+ 
    public Token(int currentLine, String type, String value) {
         this.cursor = currentLine;
         this.type = type;
@@ -72,23 +65,29 @@ public class Token {
 }
 
 class Tokens {
+    
+    // Tokens childrenNodes = new Tokens();
+    
     public ArrayList<Token> tokens = new ArrayList<Token>();
     
     public ArrayList<Token> getTokens() {
         return tokens;
     }
     
+    
+    
     public void addTokens(Token e) {
         
         try {
             if (this.isAlphaNumeric(e.getValue()) || this.checkBracket(e.getValue()) || this.checkOperator(e.getValue()) || this.checkDigit(e.getValue())) {
                 
-                System.out.println("Pass: " + e.getType() + " " + e.getValue());
+                // System.out.println("Pass: " + e.getType() + " " + e.getValue());
+                this.tokens.add(e);
             }
         }
         catch (Exception exp) {
-                System.out.println(exp.getMessage());
-                System.out.println("Fail: " + e.getType() + " " + e.getValue());
+                // System.out.println(exp.getMessage());
+                // System.out.println("Fail: " + e.getType() + " " + e.getValue());
             }   
     }
         
@@ -117,7 +116,7 @@ class Tokens {
     
     public void printTokens() {
        for (Token t : this.tokens) {
-           System.out.println("Type: " + t.getType() + "| Value: " + t.getValue());
+            System.out.println("Type: " + t.getType() + " | Value: " + t.getValue());
        }
     }
 }
