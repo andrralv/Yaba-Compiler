@@ -1,6 +1,6 @@
 public static String Hello(String x) {
 	if (x + 1 == 3) {
-		System.out.println("Worked");
+		println('Hello' + "World");
 		return True;
 	}
 }

@@ -54,10 +54,8 @@ public class Node {
                 .append(value.getValue())
                 .append("\n");
         for (Node node : children) {
-            
                 for (int i = 0; i < node.index; i++) {
                     sb.append("\t");
-            
                 }
                     sb.append(node.toString());
         }

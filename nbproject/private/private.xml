@@ -3,9 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/exceptions/ParserException.java</file>
+            <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/Lexer.java</file>
+            <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/Yaba.java</file>
             <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/SintaxisValida.java</file>
             <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/Token.java</file>
+            <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/exceptions/Error.java</file>
             <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/Parser.java</file>
+            <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/IO.java</file>
+            <file>file:/C:/Users/CQ464UC/Documents/git/Yaba-Compiler/src/yaba/Node.java</file>
         </group>
     </open-files>
 </project-private>

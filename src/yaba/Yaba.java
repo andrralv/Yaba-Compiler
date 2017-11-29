@@ -21,7 +21,11 @@ public class Yaba {
         System.out.println("Bienvenido al Compilador de YABA");
         System.out.println("Ingrese el nombre de un archivo YABA.");
         System.out.println("El archivo debe de estar en el mismo directorio del programa.");
-        System.out.println("Si desea puede utilizar el ejemplo 'input.yaba'");    
+        System.out.println("Escriba el nombre de un ejemplo o ingrese el nombre de un archivo .yaba en el mismo directorio.");  
+        System.out.println("");  
+        System.out.println("Ejemplos disponibles:");    
+        System.out.println("\t input-con-errores.yaba");   
+        System.out.println("\t input-sin-errores.yaba");   
         System.out.print(">> ");
         
         Scanner scanner = new Scanner(System.in);
@@ -37,18 +41,19 @@ public class Yaba {
         Tokenizer tokenizer = new Tokenizer();
         int line_number = numbers.getLineNumber(llcontent);
         Parser parser = new Parser();
+        System.out.println("--- ERRORES DE PARSER ---");
         for (int i = 0; i < line_number; i++) {
             tokenizer.tokenize(fcontent.readLine());
         }
         Tokens tokenList = tokenizer.getTokenList();
         // PRUEBA DE LEXER -- IMPRESION Y VALORACION DE LEXICO
         System.out.println("");
-        System.out.println("PRUEBA 1 --- TEST DE LEXICO");
+        System.out.println("PRUEBA 1 --- TEST DE LEXICO ---");
         tokenList.printTokens();
         System.out.println("********* FIN DE PRUEBA 1 **********");
         System.out.println("");
         // PRUEBA DE SINTAXIS -- COMPROBACION DE GRUPOS Y ARITMETICA
-        System.out.println("PRUEBA 2 --- TEST DE SINTAXIS");
+        System.out.println("PRUEBA 2 --- ARBOL SINTACTICO ---");
         parser.parse(tokenList);
         System.out.println("********* FIN DE PRUEBA 2 **********");
         System.out.println("");

@@ -40,7 +40,7 @@ public class SintaxisValida {
         delimitators_closed = new String[4];
         delimitators_open = new String[4];
         comments = new String[3];
-        end_line = new String[2];
+        end_line = new String[3];
         
         delimitators_open();
         delimitators_closed();
@@ -166,6 +166,8 @@ public class SintaxisValida {
     
     void end_line() {
         end_line[0] = ";";
+        end_line[1] = "'";
+        end_line[2] = "\"";
     }
     
 }

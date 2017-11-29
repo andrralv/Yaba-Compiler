@@ -1,6 +1,4 @@
 package yaba;
-import yaba.exceptions.Error;
-import java.util.ArrayList;
 
 /**
  * @author andrralv
@@ -102,7 +100,6 @@ public class Lexer {
         else {
             
         }
-        
         return token;
         
     }

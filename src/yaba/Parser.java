@@ -1,15 +1,5 @@
-/*  GRAMATICA DE PARSER
- *  ------------------------------------------------------
- *  EXPRESSION = VALUE_EXPRESSION |
- *            BINARY_EXPRESSION |
- *            PARENTHESIZED_EXPRESSION
+/*  
  *
- *  VALUE_EXPRESSION = number
- *  BINARY_OPERATOR = "+" | "-"
- *
- *  BINARY_EXPRESSION = EXPRESSION BINARY_OPERATOR EXPRESSION
- *
- *  PARENTHESIZED_EXPRESSION = "(" EXPRESSION ")"
  */
 package yaba;
 
@@ -49,14 +39,6 @@ public class Parser {
             }
         }
         System.out.println(root);
-            /***
-            if (!tokenString.equals("")) {
-                tokenString = tokenString + " " + t.getValue();
-            } else {tokenString = tokenString + t.getValue();}
-            }
-        System.out.println(tokenString);
-        * */
-            
-        
+
     }
 }

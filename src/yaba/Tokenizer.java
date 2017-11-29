@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 
 public class Tokenizer {
     
-    String delimitador = " <>(){};";
+    String delimitador = " \"'(){};";
     String token_raw;
     Lexer lexer = new Lexer();
     StringTokenizer tokens;
